@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortly</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/CSS/mainstyle.css" />
+    <link rel="stylesheet" href="./assets/CSS/media.css" />
+
+    <!-- font api  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-links">
+          <div class="logo-container"><a href="./index.html">Shortly</a></div>
+          <ul class="ul-links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </div>
+        <div class="btns">
+          <button class="login-btn">Login</button>
+          <button class="sign-up-btn">Sign Up</button>
+        </div>
+
+        <div class="toggle">
+          <p class="hambuger" onclick="toggle()">&#9776;</p>
+        </div>
+      </nav>
+    </header>
+
+    <!-- mobile nav  -->
+    <div class="mobile-container" id="toggle-display">
+      <div class="mobile-nav">
+        <p class="cancel" onclick="cancel()">&times;</p>
+
+        <div class="links">
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+            <li></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <button class="login-btn" id="loginBtnMobile">Login</button>
+            </li>
+            <li>
+              <button class="sign-up-btn" id="SignBtnMobile">Sign up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- mobile nav ends -->
+
+    <section class="get-started">
+      <div class="get-started-container">
+        <div class="content">
+          <div class="more-than">
+            <h1>More than just shorter links</h1>
+            <p>
+              Build your brand's recognition and get detailed insights on how
+              your links are performing.
+            </p>
+          </div>
+          <button class="start">Get started</button>
+        </div>
+        <div class="image">
+          <img src="./assets/images/illustration-working.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- mobile view  -->
+    <section class="mobile-get-started">
+      <div class="get-started-container">
+        <div class="image">
+          <img src="./assets/images/illustration-working.svg" alt="" />
+        </div>
+        <div class="content">
+          <div class="more-than">
+            <h1>More than just shorter links</h1>
+            <p>
+              Build your brand's recognition and get detailed insights on how
+              your links are performing.
+            </p>
+          </div>
+          <button class="start">Get started</button>
+        </div>
+      </div>
+    </section>
+    <!-- mobile view ends -->
+
+    <section class="search-tab-main-container">
+      <div class="tab-container">
+        <div class="tab-search">
+          <div class="inner-tab-search">
+            <input
+              type="text"
+              placeholder="Shorten a link here..."
+              id="input-url"
+            />
+            <button class="btn-shorten" type="submit">Shorten it!</button>
+          </div>
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+          voluptatibus ipsa qui excepturi quibusdam voluptatem animi distinctio.
+          Ex deleniti quis magnam nulla culpa cupiditate unde provident eius
+          distinctio? Ex inventore vero necessitatibus quasi magni? Vero, fugiat
+          culpa unde eum reiciendis nobis officia exercitationem fuga odio
+          incidunt sequi porro magnam autem accusantium doloribus nesciunt
+          corporis earum dolore. Repudiandae in atque facilis aliquid. Quis
+          voluptatibus amet vitae est saepe impedit aspernatur repudiandae ad
+          asperiores. Ab reprehenderit excepturi magni tenetur similique hic
+          cupiditate quos quis. Delectus nisi earum deserunt. Vero alias,
+          facilis eius, eum nihil aliquid adipisci minima natus esse sint a et
+          velit earum libero quod cupiditate ex sit dolorum consequuntur,
+          similique sed voluptatem vel laboriosam! Voluptatum omnis aut nam vero
+          mollitia illo neque nemo recusandae rem cumque doloribus ab fugit,
+          officiis laborum animi nesciunt earum. Consectetur praesentium
+          veritatis, earum nobis rem aliquam expedita placeat! Adipisci vitae
+          ipsam culpa, esse at pariatur, fugiat vero nihil saepe dolorum placeat
+          necessitatibus minima ducimus eum aperiam cumque neque ut, provident
+          est reiciendis accusantium explicabo reprehenderit blanditiis
+          quisquam. Eius consectetur voluptatibus inventore, beatae adipisci
+          praesentium, amet perspiciatis sequi tenetur, eum expedita? Earum
+          enim, minus rerum iusto nihil natus possimus dolores? Quas iste ullam
+          veritatis corporis assumenda.
+        </p>
+      </div>
+    </section>
+
+    <script src="./assets/JS/script.js"></script>
+  </body>
+</html>
