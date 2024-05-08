@@ -6,6 +6,10 @@
     font-family: 'poppins', sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 header{
     padding: 30px 0;
 }
@@ -438,6 +442,10 @@ footer {
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-around;
+}
+
+.footer-container .socials a {
+    color: transparent;
 }
 
 .footer-container .socials a:hover {
