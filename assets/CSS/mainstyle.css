@@ -346,3 +346,6 @@ ul li a:hover {
     justify-content: center;
 }
 
+.blank {
+    height: 10vh;
+}
