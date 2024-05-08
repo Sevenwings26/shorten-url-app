@@ -160,7 +160,7 @@ ul li a:hover {
 .tab-container {
     position: relative;
     width: 85%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
 }
 
@@ -190,7 +190,7 @@ ul li a:hover {
     width: 75%;
     border: none;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     font-size: 1rem;
 }
 
@@ -203,5 +203,68 @@ ul li a:hover {
     font-size: 1rem;
     cursor: pointer;
     text-transform: capitalize;
+}
+
+.grid-tab-search {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding-top: 8rem;
+    grid-gap: 2rem;  
+}
+
+.grid-tab-search .grid-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+.grid-tab-search .grid-item .items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.grid-item .items .text-link {
+    width: 50%;
+}
+
+.grid-item .items .text-link .t-link{
+    color: rgb(34, 34, 34);
+}
+
+.grid-item .items .shorten-link {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.grid-item .items .shorten-link .s-link-text{
+    color: #60D1D1;
+}
+
+.grid-item .items .shorten-link .copy-link{
+    background-color: #60D1D1;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    color: #fff;
+}
+
+.grid-item .items .shorten-link .copied-link{
+    background-color: hsl(260, 8%, 14%);
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    color: #fff;
 }
 
