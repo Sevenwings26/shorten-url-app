@@ -160,9 +160,6 @@
     background-repeat: no-repeat;
     background-size: cover;   
     display: block;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
 }
  
   .inner-tab-search {
@@ -186,4 +183,40 @@
   .grid-tab-search {
     display: none;
   }
+
+.advanced-text-container h1{
+  font-size: 2rem;
+  margin-top: 10rem;
+  width: 100%;
 }
+
+.advanced-text-container p{
+  width: 100%;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  color: hsl(0, 1%, 58%);
+  padding: 5px;
+}
+
+.brand-records-customizable {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.brc-container{
+  margin-bottom: 100px;
+}
+
+
+.brc-container .icon {
+  left: 9.5rem;
+}
+
+.brand-records-customizable .line {
+    height: 160vh;
+    width: 2%;
+    left: 12rem;
+}
+}
+
+
