@@ -1,7 +1,31 @@
+
+
+@media screen and (max-width: 1398px) {
+  .brc-container {
+    height: 25vh;
+  }
+}
+
+
+@media screen and (max-width: 1134px) {
+  .brc-container {
+    height: 32vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .brc-container {
+    height: 40vh;
+  }
+}
+
 /* media @max-width 790 */
 @media screen and (max-width: 983px) {
   .tab-search {
     top: -4.3rem;
+  }
+  .brc-container {
+    height: 40vh;
   }
 }
 
@@ -24,6 +48,10 @@
 
   .tab-container {
     width: 90%;
+  }
+
+  .brc-container {
+    height: 65vh;
   }
 }
 

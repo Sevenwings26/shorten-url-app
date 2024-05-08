@@ -155,12 +155,12 @@ ul li a:hover {
 .search-tab-main-container {
     background-color: #EFF1F7;
     margin-top: 8rem;
+    min-height: 100vh;
 }
 
 .tab-container {
     position: relative;
     width: 85%;
-    /* border: 1px solid black; */
     margin: auto;
 }
 
@@ -290,6 +290,15 @@ ul li a:hover {
 }
 
 
+/* 
+.brand-records-customizable {
+    position: relative;
+    margin-top: 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+} */
 
 .brand-records-customizable {
     position: relative;
@@ -303,7 +312,7 @@ ul li a:hover {
 .brand-records-customizable .line {
     position: absolute;
     z-index: 0;
-    height: 0.8vh;
+    height: 1vh;
     width: 100%;
     background-color: #60D1D1;
     top: 10rem;
@@ -318,8 +327,9 @@ ul li a:hover {
 
 .brc-container .content {
     padding: 30px;
-    padding-top: 77px;
+    padding-top: 60px;
 }
+
 .brc-container .content h1{
     color: hsl(257, 14%, 20%);
 }
@@ -349,3 +359,61 @@ ul li a:hover {
 .blank {
     height: 10vh;
 }
+
+/* <section class="boost"> */
+.boost-container {
+    width: 100%;
+    height: 30vh;
+    background-color: hsl(258, 51%, 21%);
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boost-container h1{
+    font-size: 3rem;
+    color: #fff;
+}
+
+footer {
+    background-color: hsl(260, 8%, 14%);
+}
+
+.footer-container {
+    width: 85%;
+    border: 2px solid hsl(225, 33%, 95%);
+    margin: auto;
+    display: flex;
+    padding: 2.5em 0;
+}
+
+.footer-container .shortly-container {
+    width: 35%;
+    border: 2px solid hsl(225, 33%, 95%);
+
+}
+
+.footer-container .FRC {
+    width: 40%;
+    border: 2px solid red;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.FRC .features ul {
+    display: block;
+    list-style: none;
+}
+
+.footer-container .socials {
+    width: 25%;
+    border: 2px solid red;
+
+}
+
+
