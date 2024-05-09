@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/CSS/mainstyle.css" />
     <link rel="stylesheet" href="./assets/CSS/media.css" />
 
+    <link rel="shortcut icon" href="./assets/images/icons8-s-50.png" width="30px" type="image/x-icon">
     <!-- font api  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -27,8 +28,8 @@
           </ul>
         </div>
         <div class="btns">
-          <button class="login-btn">Login</button>
-          <button class="sign-up-btn">Sign Up</button>
+          <button class="login-btn" onclick="login()">Login</button>
+          <button class="sign-up-btn" onclick="signup()">Sign Up</button>
         </div>
 
         <div class="toggle">
@@ -50,10 +51,10 @@
             <li></li>
             <li><a href="#">Contact</a></li>
             <li>
-              <button class="login-btn" id="loginBtnMobile">Login</button>
+              <button class="login-btn" id="loginBtnMobile" onclick="login()">Login</button>
             </li>
             <li>
-              <button class="sign-up-btn" id="SignBtnMobile">Sign up</button>
+              <button class="sign-up-btn" id="SignBtnMobile" onclick="signup()">Sign up</button>
             </li>
           </ul>
         </div>
@@ -61,6 +62,171 @@
     </div>
     <!-- mobile nav ends -->
 
+    <!-- sign and login modals  -->
+
+    <!-- registration modal  -->
+    <div class="modal" id="register">
+      <div class="modal-content">
+        <span class="close" id="close-signup">&times;</span>
+        <div class="modal-header">
+          <h3>Register</h3>
+
+          <!-- <h3>Login</h3> -->
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="input-div">
+              <p class="text-p">Sign up with an email</p>
+              <label for="username"></label>
+              <input type="text" placeholder="Username" required />
+
+              <label for="email"></label> <br />
+              <input type="email" placeholder="Email" required />
+              <br />
+              <label for="password"></label>
+              <input type="password" required placeholder="Password" />
+            </div>
+
+            <div class="terms">
+              <input type="checkbox" class="terms-box" required />
+              <p>
+                I agree to the <a href="#">Terms and Conditions</a>,
+                <a href="">Privacy Policy</a> & <a href="">License Agreement</a>
+              </p>
+            </div>
+
+            <div class="btn-div">
+              <button type="submit" class="btn-sign-up">Register</button>
+            </div>
+
+            <div class="or-div">
+              <p>or</p>
+            </div>
+
+            <div class="social-div">
+              <div class="grid-container">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="./Assets/IMG/icons8-apple-30.png"
+                      alt=""
+                      style="width: 30px"
+                  /></a>
+                </div>
+
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="./Assets/IMG/icons8-microsoft-48.png"
+                      alt=""
+                      style="width: 30px"
+                  /></a>
+                </div>
+
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="./Assets/IMG/icons8-google-48.png"
+                      alt=""
+                      style="width: 30px"
+                  /></a>
+                </div>
+
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="./Assets/IMG/icons8-linkedin-48.png"
+                      alt=""
+                      style="width: 30px"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login  -->
+
+    <div class="modal" id="login-id">
+      <div class="modal-content">
+        <span class="close" id="close-login">&times;</span>
+        <div class="modal-header">
+          <h2>Login</h2>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="input-div">
+              <p class="text-p">Enter a registered email/username</p>
+              <label for="username"></label>
+              <input type="text" placeholder="Username or Email" required />
+              <br />
+              <label for="password"></label>
+              <input type="password" required placeholder="Password" />
+            </div>
+
+            <div class="password-div">
+              <div class="forgot-password">
+                <a href="#">Forgot passcode?</a>
+              </div>
+            </div>
+
+            <div class="btn-div">
+              <button type="submit" class="btn-sign-up">Login</button>
+            </div>
+
+            <div class="or-div">
+              <p>or</p>
+            </div>
+
+            <div class="social-div">
+              <div class="grid-container">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="./Assets/IMG/icons8-apple-30.png"
+                      alt=""
+                      style="width: 30px"
+                  /></a>
+                </div>
+
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="./Assets/IMG/icons8-microsoft-48.png"
+                      alt=""
+                      style="width: 30px"
+                  /></a>
+                </div>
+
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="./Assets/IMG/icons8-google-48.png"
+                      alt=""
+                      style="width: 30px"
+                  /></a>
+                </div>
+
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="./Assets/IMG/icons8-linkedin-48.png"
+                      alt=""
+                      style="width: 30px"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+<!-- Ends here - Login and sign up   -->
+
+<!-- sections begin  -->
     <section class="get-started">
       <div class="get-started-container">
         <div class="content">

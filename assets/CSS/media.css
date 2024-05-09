@@ -31,7 +31,11 @@
     width: 90%;
   }
 
-  .get-started-container {
+ul li a{
+  font-size: 0.8rem;
+}
+
+.get-started-container {
     width: 100%;
   }
 
@@ -62,7 +66,7 @@
 /* media @max-width 600 */
 @media screen and (max-width: 600px) {
   header nav {
-    width: 97%;
+    width: 90%;
   }
   header nav .nav-links {
     width: 50%;
@@ -91,6 +95,45 @@
   .more-than p {
     font-size: 11px;
   }
+
+  .grid-tab-search {
+    min-width: 97%;
+  }
+
+  .grid-tab-search .grid-item {
+    min-width: 100%;
+    font-size: 1rem;
+}
+
+
+.grid-item .items .shorten-link .copy-link{
+  width: 30%;
+}
+
+.grid-item .items .shorten-link .copied-link{
+  width: 30%;
+}
+
+.brand-records-customizable {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.brc-container {
+  margin-bottom: 100px;
+}
+
+.brc-container .icon {
+  left: 15rem;
+}
+
+.brand-records-customizable .line {
+  height: 90vh;
+  width: 2%;
+  left: 17.2rem;
+}
+
+
 }
 
 /* media @small screen */
@@ -118,23 +161,61 @@
   }
 
   .mobile-nav {
+    z-index: 0;
     margin: 0px 12px;
     display: flex;
     flex-direction: column;
     position: fixed;
-    width: 70%;
-    background-color: rgb(246, 251, 249);
+    width: 90%;
+    background-color:  #60d1d1e9;
+    background-image: url("../images/bg-boost-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+
   }
 
   .cancel {
     position: absolute;
-    top: 2px;
+    top: 0rem;
     right: 10px;
+    font-size: 1.5rem;
+    color: rgb(15, 13, 13);
   }
 
   .links ul {
     display: block;
+    text-align: center;
   }
+
+  .links ul li {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .links ul li a {
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
+  .links ul li a:hover {
+    color: #af8f8f;
+  }
+
+  .login-btn {
+    color: white;
+    font-size: 1.2rem;
+    border: rgb(10,20,10) solid 1px;
+    border-radius: 50px;
+  }
+
+  .sign-up-btn {
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: black;
+    margin-bottom: 2rem;
+  }
+
 
   /* off big-screen */
   .get-started {
@@ -208,7 +289,7 @@
     width: 100%;
     height: 10vh;
     font-size: 1.4rem;
-    margin-top: 40px;
+    margin-top: 25px;
   }
 
   .grid-tab-search {
@@ -278,14 +359,6 @@
     padding: 5px;
   }
 
-  .brand-records-customizable {
-    display: block;
-    margin-bottom: 50px;
-  }
-
-  .brc-container {
-    margin-bottom: 100px;
-  }
 
   .brc-container .icon {
     left: 9.5rem;

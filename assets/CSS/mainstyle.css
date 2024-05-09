@@ -89,6 +89,152 @@ ul li a:hover {
     display: none;
 }
 
+
+/* modals  */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-header {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+  }
+  
+  .close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .close:hover {
+    font-size: 30px;
+    color: #888;
+  }
+  
+  form{
+    text-align: center;
+    border-top: 1px solid #60D1D1;
+    margin-top: 10px;
+  }
+  
+  
+  .input-div {
+    margin-top: 10px;
+  }
+  
+  .text-p {
+    font-size: 14px;
+    color: #4F5665;
+    font-style: oblique;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid rgba(125, 121, 121, 0.285);
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: center;
+    font-size: 13.5px;
+    font-style: oblique;
+  }
+  
+  .password-div {
+    display: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .forgot-password a {
+    display: none;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: white;
+  }
+  
+  .forgot-password a:hover{
+    background-color: rgb(247, 222, 222);
+    color: #000000;
+  }
+  
+  .terms {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #4F5665;
+  }
+  
+  .terms a{
+    color: #60D1D1;
+  }
+  
+  .terms-box{
+    width: 10%;
+  }
+  
+  .btn-sign-up {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .btn-sign-up:hover{
+    background-color: rgb(247, 222, 222);
+    color: #000000;
+  }
+  
+
+
+  .grid-container {
+    display: grid;
+    width: 80%;
+    height: 5vh;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .box {
+    background-color: #eae8e881;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  /* modal ends  */
+
+
 /* section .get-started */
 .get-started{
     display: flex;
@@ -188,6 +334,7 @@ ul li a:hover {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    /* border: 1px solid saddlebrown; */
 }
 
 .inner-tab-search input {
@@ -196,10 +343,13 @@ ul li a:hover {
     border-radius: 10px;
     padding: 10px;
     font-size: 1rem;
+    height: inherit;
+    text-align: left;
 }
 
 .inner-tab-search .btn-shorten {
     width: 22%;
+    height: inherit;
     border: none;
     border-radius: 10px;
     background-color: #60D1D1;
@@ -232,6 +382,7 @@ ul li a:hover {
 
 .grid-item .items .text-link {
     width: 50%;
+    word-wrap: break-word;
 }
 
 .grid-item .items .text-link .t-link{
@@ -293,16 +444,6 @@ ul li a:hover {
     padding: 10px;
 }
 
-
-/* 
-.brand-records-customizable {
-    position: relative;
-    margin-top: 5rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-} */
 
 .brand-records-customizable {
     position: relative;
