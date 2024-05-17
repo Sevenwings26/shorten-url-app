@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  max-width: 1500px;
+  margin: auto;
+}
+
+header {
+  width: 85%;
+  margin: auto;
+  position: relative;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0em;
+}
+
+.logo {
+  font-size: 1.6rem;
+}
+
+/* Responsive Nav */
+.navigator {
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 10px;
+  transition: 1s ease-in;
+  position: absolute;
+  display: none;
+  top: 3rem;
+  width: 100%;
+}
+
+.cancel {
+  /* position: absolute; */
+  float: right;
+}
+
+.cancel p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.navigator .a-tags {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 16px;
+}
+
+.a-tags a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8em;
+  font-weight: 700;
+}
+
+.a-tags a:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+.line-divider {
+  width: 90%;
+  border-bottom: #ffffffba solid 1px;
+  margin: auto;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.btns button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn-login {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.btn-signup {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 12px;
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 20px;
+  margin: 1rem 0 0.6rem 0;
+}
+
+.nav-links {
+  display: none;
+}
+.btns-large {
+  display: none;
+}
+
+
+.image {
+  /* overflow: visible; */
+  width: 100%;
+  /* border: 1px solid #000; */
+}
+
+.image img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  /* overflow: hidden; */
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+  margin: 1.3rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.intro p {
+  margin: 1.3rem 0;
+ font-size: 1rem;
+  line-height: 1.2;
+}
+
+.btn-start {
+  border: none;
+  background-color: #60d1d1;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.container {
+  display: none;
+}
+
+
+/* .navigator styling ends here */
+
+@media screen and (min-width: 768px) {
+    .toggle-container {
+        display: none;
+      }
+
+      .logo {
+        font-size: 1.1rem;
+      }
+
+      .inner-nav {
+        width: 60%;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo-container {
+        margin-right: 2rem;
+      }
+      .nav-links{
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+        gap: 2.5rem;
+      }
+    
+      .nav-links a {
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: hsl(257, 7%, 63%);
+      }
+    
+      .btns-large {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
+      .btns-large button {
+        border: none;
+      }
+    
+      .btns-large .btn-login {
+        color: hsl(257, 7%, 63%);
+        font-size: 0.8rem;
+      }
+    
+      .btns-large .btn-signup {
+        padding: 0.3rem 2rem;
+        border-radius: 30px;
+        font-size: 0.8rem;
+      }
+        
+      .image {
+        display: none;
+      }
+      .intro{
+        display: none;
+      }
+      .container {
+        display: flex;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* padding: 2rem 0; */
+        gap: 2rem;
+      }
+        
+}
+
+@media screen and (min-width: 1024px) {
+  .inner-nav {
+    width: 50%;
+
+  }
+  
+  .nav-links{
+    width: 50%;
+    gap: 1.5rem;
+  }
+
+  .logo{
+    font-size: 1.6rem;
+  }
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .btns-large .btn-login,
+  .btns-large .btn-signup {
+    font-size: 1rem;
+  }
+}
