@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="container">
       <nav class="nav-bar">
         <div class="inner-nav">
           <div class="logo-container">
@@ -39,43 +39,46 @@
         </div>
       </nav>
 
-          <!-- for small device @ min-width: 500px -->
-    <div class="navigator" id="toggleButton">
-      <div class="cancel">
-        <p class="cancel" onclick="cancel()">&times;</p>
+      <!-- for small device @ min-width: 500px -->
+      <div class="navigator" id="toggleButton">
+        <div class="cancel">
+          <p class="cancel" onclick="cancel()">&times;</p>
+        </div>
+        <div class="a-tags">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Resources</a>
+        </div>
+        <div class="line-divider"></div>
+        <div class="btns">
+          <button class="btn-login">Login</button>
+          <button class="btn-signup">Sign Up</button>
+        </div>
       </div>
-      <div class="a-tags">
-        <a href="#">Features</a>
-        <a href="#">Pricing</a>
-        <a href="#">Resources</a>
-      </div>
-      <div class="line-divider"></div>
-      <div class="btns">
-        <button class="btn-login">Login</button>
-        <button class="btn-signup">Sign Up</button>
-      </div>
-    </div>
+    </header>
 
+    <section class="get-started-mobile">
+      <div class="container-img">
+        <div class="image">
+          <img src="./Assets/imgs/illustration-working.svg" alt="" />
+        </div>
+      </section>
 
-      <div class="image">
-        <img src="./Assets/imgs/illustration-working.svg" alt="" />
+      <section class="more-mobile">
+        <div class="intro container">
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <button class="btn-start">Get Started</button>
+        </div>
       </div>
-      
-      <div class="intro">
-        <h1>More than just shorter links</h1>
-        <p>
-          Build your brand’s recognition and get detailed insights on how your
-          links are performing.
-        </p>
-        <button class="btn-start">Get Started</button>
-      </div>  
+    </section>
 
-        <div class="container">
-        
-          <div class="image">
-            <img src="./Assets/imgs/illustration-working.svg" alt="" />
-          </div>
-          
+    <section class="get-started-large">
+      <div class="container">
+        <div class="hero">
           <div class="intro_">
             <h1>More than just shorter links</h1>
             <p>
@@ -84,15 +87,75 @@
             </p>
             <button class="btn-start">Get Started</button>
           </div>
-            
-          <div class="image_">
-              <img src="./Assets/imgs/illustration-working.svg" alt="" />
+
+          <div class="image">
+            <img src="./Assets/imgs/illustration-working.svg" alt="" />
           </div>
-           
-    </div>
+       </div>
+      </div>
+    </section>
 
-    </header>
+    <section class="link-display">
+      <div class="container">
+        <div class="insert-link">
+          <div class="inner_">
+            <input
+              type="text"
+              placeholder="Shorten a link here..."
+              id="input-url"
+            />
+            <button class="btn-shorten" type="submit">Shorten it!</button>
+          </div>
+        </div>
+      </div>
 
+
+      <div class="advanced-text-container">
+        <h1>Advanced Statistics</h1>
+        <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+      </div>
+      
+
+      <!-- brand-records-customizable -->
+      <div class="container">
+
+      <div class="brand-records-customizable">
+        <div class="line">
+        </div>
+        <div class="brc-container">
+          <div class="icon">
+            <img src="./assets/images/icon-brand-recognition.svg" alt="">
+          </div>
+          <div class="content">
+            <h1>Brand Recognition</h1>
+            <p>Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+          </div>
+        </div>
+        
+        <div class="brc-container" id="style-cont1">
+          <div class="icon">
+            <img src="./assets/images/icon-detailed-records.svg" alt="">
+          </div>
+          <div class="content">
+            <h1>Detailed Records</h1>
+            <p>Gain insights into who is clinking your links. Knowing when and where people engage with your content helps infom better decisions.</p>
+          </div>
+        </div>
+        
+        <div class="brc-container" id="style-cont2">
+          <div class="icon">
+            <img src="./assets/images/icon-fully-customizable.svg" alt="">
+          </div>
+          <div class="content">
+            <h1>Fully Customizable</h1>
+            <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+          </div>
+        </div>
+      </div>
+        <div class="blank"></div>
+      </div>
+
+    </section>
 
 
     <script src="./Assets/js/script.js"></script>
